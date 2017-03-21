@@ -35,6 +35,17 @@ function initialize(){
 	let magentaSquare 
 				= new ColoredSquare(20, 40, 70, "magenta");
 	magentaSquare.draw(ctx);
+	
+	// mousemove Eventlistener
+	function onMouseMove(e){
+		const x = e.pageX;
+		const y = e.pageY;
+		magentaSquare.x = x - 35;
+		magentaSquare.y = y - 35;
+		magentaSquare.draw(ctx);
+	}
+	const container = document.getElementById("container");
+	container.addEventListener("mousemove", onMouseMove);
 }
 
 
