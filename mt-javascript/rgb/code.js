@@ -14,8 +14,8 @@ function initialize(){
 		// set the background color of the body tag 
 		let body = document.getElementById("body");
 		body.style["background-color"] 
-				= `rgb(${red}, ${green}, ${blue})`;
-// oder:		= "rgb(" + red + "," + green + "," + blue + ")";
+// oder:				= `rgb(${red}, ${green}, ${blue})`;
+		= "rgb(" + red + "," + green + "," + blue + ")";
 	}
 	
 	// set event listener
